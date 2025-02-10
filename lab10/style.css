@@ -1,0 +1,148 @@
+body {
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    padding: 0;
+    background: linear-gradient(to right, rgb(165, 126, 76), rgb(109, 26, 26));
+}
+.furniture {
+    width: 100%;
+    height: 100%;
+    background-size: cover;
+    z-index: -1;
+    position: absolute;
+    object-fit:cover;
+    image-rendering: auto;       
+    image-rendering: crisp-edges; 
+    image-rendering: optimizeQuality; 
+    
+}
+.headerDiv {
+    display: flex;
+    flex-direction: column;
+    z-index: 1;
+    position: relative;
+    overflow: hidden;
+    height: 300px;
+    width: 100%;
+    justify-content: center;
+    box-shadow: 3px 4px 10px rgba(0, 0, 0, 0.15);
+}
+header {
+    color: white;
+    padding: 50px 20px;
+    text-align: center;
+    position: relative;
+}
+
+header h1 {
+    color: black;
+    margin: 0;
+    font-size: 2.5em;
+}
+
+header p {
+    font-size: 1.2em;
+    color: bisque;
+}
+
+.idbutton {
+    background-color: burlywood;
+    text-decoration: none;
+    color: #333;
+    border: none;
+    padding: 15px 30px;
+    font-size: 1em;
+    cursor: pointer;
+    transition: background-color 0.3s, transform 0.2s;
+    border-radius: 5px;
+    margin: 10px 0;
+    width: 200px;
+    align-self: center;
+
+}
+
+.idbutton:hover {
+    background-color: white;
+    transform: scale(1.05);
+}
+
+section {
+    padding: 40px 20px;
+}
+#service {
+    background-color: burlywood;
+    box-shadow: 0 10px 10px rgba(0,0,0,0.1);
+    border: solid;
+    border-width: 0.5px;
+    text-align: center;
+}
+
+.service, .testimonial {
+    background: burlywood;
+    border-radius: 10px;
+    padding: 20px;
+    margin: 10px 0;
+    text-align: center;
+    box-shadow: 0 10px 10px rgba(0,0,0,0.1);
+    border: solid;
+    border-width: 0.5px;
+}
+
+.service:hover, .testimonial:hover {
+    transform: translateY(-5px);
+}
+
+h2 {
+    text-align: center;
+    color: black;
+}
+
+footer {
+    text-align: center;
+    padding: 20px;
+    background-color: #f1f1f1;
+}
+
+@media (max-width: 600px) {
+    header {
+        padding: 20px;
+    }
+
+    .service, .testimonial {
+        margin: 5px 0;
+        padding: 15px;
+    }
+}
+.modal {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.7);
+    z-index: 1000;
+}
+
+.modal-content {
+    background: white;
+    padding: 20px;
+    border-radius: 10px;
+    text-align: center;
+}
+
+.close-btn {
+    color: #aaa;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+}
+
+.close-btn:hover,
+.close-btn:focus {
+    color: black;
+    text-decoration: none;
+    cursor: pointer;
+}
